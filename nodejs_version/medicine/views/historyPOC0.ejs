@@ -40,7 +40,7 @@
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <h2>Pater Pan</h2>
+                <h2>Peter Pan</h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -69,7 +69,7 @@
                       <li><a href="/tokenStore">tokenStore</a></li>
                       <li><a href="/historyPOC0">historyPOC0</a></li>
                       <li><a href="/queryDataPage">queryDataPage</a></li>
-                      <li><a href="/queryHarvestBatchPage">queryHarvestBatchPage</a></li>
+                      <li><a href="/queryHarvestBatchPage">queryHarvestBatchPage</a></li>s
                     </ul>
                   </li>
                   <li><a><i class="fa fa-edit"></i> Upload Data <span class="fa fa-chevron-down"></span></a>
@@ -249,38 +249,40 @@
                     </ul>
                     <div class="clearfix"></div>
                   </div>
-                  <div class="x_content col-md-offset-4">
+                  <div class="x_content">
 
-                        <form method="post" action='/UploadData'>
-                            <font size="20">上傳食品藥材資料</font>
-                            <div class="form-group row">
-                                <label class="col-md-1 col-form-label">名稱:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Name" type="text" value="" size="20" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-1 col-form-label">療效:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Efficacy" type="text" value="" size="20" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-1 col-form-label">顏色:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Color" type="text" value="" size="20" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-1 col-form-label">所有者:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Owner" type="text" value="" size="20" required>
-                                </div>
-                            </div>
-                            <div class="col-md-offset-2">
-                            <button type="submit" class="btn btn-primary mb-2">submit</button>
-                            </div>
-                        </form>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Token</th>
+                          <th>Role</th>
+                          <th>TimeStampDate</th>
+                          <th></th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      <% for (var i = 0; i < data.length; i++) {  %>
+                        <tr>
+                          <th scope="row"><%= i+1 %></th>
+                          <td><%= data[i].Value.Name %></td>
+                          <td><%= data[i].Value.Token %></td>
+                          <td><%= data[i].Value.Role %></td>
+                          <td><%= data[i].Value.TimeStampDate %></td>
+                          <td>
+                            <% var link = "/update_bike/"+data[i].aid %>
+                            <a href= <%= link %> >更新</a>
+                          </td>
+                          <td>
+                            <% var del = "/delete_bike/"+data[i].aid %>
+                            <a href= <%= del %> >刪除</a>
+                           </td>
+                        </tr>
+                      <% } %>
+                      </tbody>
+                    </table>
 
                   </div>
                 </div>

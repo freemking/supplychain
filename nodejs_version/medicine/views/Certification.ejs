@@ -40,7 +40,7 @@
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <h2>Pater Pan</h2>
+                <h2>Peter Pan</h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -210,7 +210,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Tables <small>Some examples to get you started</small></h3>
+                <h3>Node <small> Certification</small></h3>
               </div>
 
               <div class="title_right">
@@ -231,7 +231,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Basic Tables <small>basic table subtitle</small></h2>
+                    <h2>Node <small> Certification</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -249,36 +249,59 @@
                     </ul>
                     <div class="clearfix"></div>
                   </div>
-                  <div class="x_content col-md-offset-4">
+                  <div class="x_content col-md-offset-3">
 
-                        <form method="post" action='/UploadData'>
-                            <font size="20">上傳食品藥材資料</font>
+                        <form method="" action='#'>
                             <div class="form-group row">
-                                <label class="col-md-1 col-form-label">名稱:</label>
-                                <div class="col-md-3">
+                                <label class="col-md-1 col-form-label">企業類型:</label>
+                                <div class="col-md-4">
+                                    <select id="column" class="form-control" name="Name" required>
+                                        <option>批發市場</option>
+                                        <option>種植基地</option>
+                                        <option>生產企業</option>
+                                        <option>連鎖藥店</option>
+                                        <option>醫院</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-1 col-form-label">企業名稱:</label>
+                                <div class="col-md-4">
                                     <input id="column" class="form-control" name="Name" type="text" value="" size="20" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-md-1 col-form-label">療效:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Efficacy" type="text" value="" size="20" required>
+                                <label class="col-md-1 col-form-label">統一社會信用代碼:</label>
+                                <div class="col-md-4">
+                                    <input id="column" class="form-control" name="Code" type="text" value="" size="20" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-md-1 col-form-label">顏色:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Color" type="text" value="" size="20" required>
+                                <label class="col-md-1 col-form-label">通訊地址:</label>
+                                <div class="col-md-4">
+                                    <input id="column" class="form-control" name="Address" type="text" value="" size="20" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-md-1 col-form-label">所有者:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Owner" type="text" value="" size="20" required>
+                                <label class="col-md-1 col-form-label">聯繫電話:</label>
+                                <div class="col-md-4">
+                                    <input id="column" class="form-control" name="Phone" type="text" value="" size="20" required>
                                 </div>
                             </div>
-                            <div class="col-md-offset-2">
-                            <button type="submit" class="btn btn-primary mb-2">submit</button>
+                            <div class="form-group row">
+                                <label class="col-md-1 col-form-label">聯繫人:</label>
+                                <div class="col-md-4">
+                                    <input id="column" class="form-control" name="People" type="text" value="" size="20" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-1 col-form-label">上傳附件:</label>
+                                <div class="col-md-4">
+                                    <input type="file" class="form-control-file" name="File" size="20" required>
+                                </div>
+                            </div> 
+                            <div class="col-md-offset-1">
+                                <button type="submit" class="btn btn-primary mb-2">submit</button>
                             </div>
                         </form>
 

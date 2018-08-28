@@ -56,7 +56,9 @@ var instantiateChaincode = async function(peers, channelName, chaincodeName, cha
 		if (functionName)
 			request.fcn = functionName;
 
-		let results = await channel.sendInstantiateProposal(request, 60000); //instantiate takes much longer
+		//let results = await channel.sendInstantiateProposal(request, 60000); 
+        let results = await channel.sendInstantiateProposal(request, 90000);
+        //instantiate takes much longer
 
 		// the returned object has both the endorsement results
 		// and the actual proposal, the proposal will be needed

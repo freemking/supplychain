@@ -251,8 +251,8 @@
                   </div>
                   <div class="x_content col-md-offset-4">
 
-                        <form method="post" action='/UploadData'>
-                            <font size="20">上傳食品藥材資料</font>
+                        <form method="post" action='/UploadDataHarvest'>
+                            <font size="20">業務環節:藥材採收</font>
                             <div class="form-group row">
                                 <label class="col-md-1 col-form-label">名稱:</label>
                                 <div class="col-md-3">
@@ -269,6 +269,79 @@
                                 <label class="col-md-1 col-form-label">顏色:</label>
                                 <div class="col-md-3">
                                     <input id="column" class="form-control" name="Color" type="text" value="" size="20" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-1 col-form-label">採收批次:</label>
+                                <div class="col-md-3">
+                                    <input id="column" class="form-control" name="HarvestBatch" type="text" value="" size="20" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-1 col-form-label">採取動作:</label>
+                                <div class="col-md-3">
+                                    <input id="column" class="form-control" name="Action" type="text" value="" size="20" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-1 col-form-label">採收地點:</label>
+                                <div class="col-md-3">
+                                    <input id="column" class="form-control" name="HarvestPlace" type="text" value="" size="20" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-1 col-form-label">採收天氣:</label>
+                                <div class="col-md-3">
+                                    <!--input id="column" class="form-control" name="HarvestWeather" type="text" value="" size="20" required-->
+                                    <select id="HarvestWeather" name="HarvestWeather" class="form-control" required >
+                                        <option>雨前</option>
+                                        <option>雨後</option>
+                                        <option>晴天</option>
+                                        <option>陰天</option>
+                                        <option>雪天</option>
+                                        <option>大風</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-1 col-form-label">採收數量:</label>
+                                <div class="col-md-3">
+                                    <input id="column" class="form-control" name="HarvestNumber" type="text" value="" size="20" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-1 col-form-label">採收單位:</label>
+                                <div class="col-md-3">
+                                    <!--input id="column" class="form-control" name="HarvestUnit" type="text" value="" size="20" required-->
+                                    <select id="HarvestUnit" name="HarvestUnit" class="form-control" required >
+                                        <option>公斤</option>
+                                        <option>噸</option>
+                                        <option>斤</option>
+                                        <option>根</option>
+                                        <option>打</option>
+                                        <option>個</option>
+                                        <option>支</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-1 col-form-label">採收溫度(攝氏度):</label>
+                                <div class="col-md-3">
+                                    <input id="column" class="form-control" name="HarvestTemperature" type="text" value="" size="20" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-1 col-form-label">基肥:</label>
+                                <div class="col-md-3">
+                                    <!--input id="column" class="form-control" name="Fertilizer" type="text" value="" size="20" required-->
+                                    <select id="Fertilizer" name="Fertilizer" class="form-control" required >
+                                        <option>過磷酸鈣</option>
+                                        <option>硫酸鉀</option>
+                                        <option>尿素</option>
+                                        <option>米糠</option>
+                                        <option>乾海草</option>
+                                        <option>植物豆餅</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group row">

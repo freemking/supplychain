@@ -40,7 +40,7 @@
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <h2>Pater Pan</h2>
+                <h2>Peter Pan</h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -69,7 +69,6 @@
                       <li><a href="/tokenStore">tokenStore</a></li>
                       <li><a href="/historyPOC0">historyPOC0</a></li>
                       <li><a href="/queryDataPage">queryDataPage</a></li>
-                      <li><a href="/queryHarvestBatchPage">queryHarvestBatchPage</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-edit"></i> Upload Data <span class="fa fa-chevron-down"></span></a>
@@ -249,41 +248,60 @@
                     </ul>
                     <div class="clearfix"></div>
                   </div>
-                  <div class="x_content col-md-offset-4">
+                
+                  
+                  <div class="x_content">
 
-                        <form method="post" action='/UploadData'>
-                            <font size="20">上傳食品藥材資料</font>
-                            <div class="form-group row">
-                                <label class="col-md-1 col-form-label">名稱:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Name" type="text" value="" size="20" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-1 col-form-label">療效:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Efficacy" type="text" value="" size="20" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-1 col-form-label">顏色:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Color" type="text" value="" size="20" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-1 col-form-label">所有者:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Owner" type="text" value="" size="20" required>
-                                </div>
-                            </div>
-                            <div class="col-md-offset-2">
-                            <button type="submit" class="btn btn-primary mb-2">submit</button>
-                            </div>
-                        </form>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Efficacy</th>
+                          <th>Color</th>
+                          <th>HarvestBatch</th>
+                          <th>Action</th>
+                          <th>Place</th>
+                          <th>Weather</th>
+                          <th>Number</th>
+                          <th>Unit</th>
+                          <th>Temperature</th>
+                          <th>Fertilizer</th>
+                          <th>FirstBatch</th>
+                          <th>Skill</th>
+                          <th>OwnerID</th>
+                          <th>TimeStampDate</th>
+                          <th>TimeStampTime</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><%= 1 %></th>
+                          <td><%= data.Name %></td>
+                          <td><%= data.Efficacy %></td>
+                          <td><%= data.Color %></td>
+                          <td><%= data.HarvestBatch %></td>
+                          <td><%= data.Action %></td>
+                          <td><%= data.Place %></td>
+                          <td><%= data.Weather %></td>
+                          <td><%= data.Number %></td>
+                          <td><%= data.Unit %></td>
+                          <td><%= data.Temperature %></td>
+                          <td><%= data.Fertilizer %></td>
+                          <td><%= data.FirstBatch %></td>
+                          <td><%= data.Skill %></td>
+                          <td><%= data.OwnerID %></td>
+                          <td><%= data.TimeStampDate %></td>
+                          <td><%= data.TimeStampTime %></td>
+                        </tr>
+                      </tbody>
+                    </table>
 
                   </div>
+
                 </div>
+              </div>
+
               </div>
 
             </div>

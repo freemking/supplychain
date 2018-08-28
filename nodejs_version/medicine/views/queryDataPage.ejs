@@ -40,7 +40,7 @@
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <h2>Pater Pan</h2>
+                <h2>Peter Pan</h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -249,32 +249,28 @@
                     </ul>
                     <div class="clearfix"></div>
                   </div>
+                
                   <div class="x_content col-md-offset-4">
 
-                        <form method="post" action='/UploadData'>
-                            <font size="20">上傳食品藥材資料</font>
+                        <form method="post" action='/queryDataPage'>
+                            <font size="20">查詢食品藥材資料</font>
                             <div class="form-group row">
-                                <label class="col-md-1 col-form-label">名稱:</label>
+                                <label class="col-md-1 col-form-label">Material Key:</label>
                                 <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Name" type="text" value="" size="20" required>
+                                    <!--div class="col-md-3">
+                                        <input id="column" class="form-control" name="MaterialKey" type="text" value="" size="20" required>
+                                    </div-->
+                                    <select id="MaterialKey" name="MaterialKey" class="form-control" required >
+                                        <% for (var i=0; i<data.length; i++) { %>
+                                        <option><%= data[i]%></option>
+                                        <% } %>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-md-1 col-form-label">療效:</label>
+                                <label class="col-md-1 col-form-label">Inquirer(POCX):</label>
                                 <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Efficacy" type="text" value="" size="20" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-1 col-form-label">顏色:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Color" type="text" value="" size="20" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-1 col-form-label">所有者:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Owner" type="text" value="" size="20" required>
+                                    <input id="column" class="form-control" name="Inquirer" type="text" value="" size="20" required>
                                 </div>
                             </div>
                             <div class="col-md-offset-2">
@@ -282,8 +278,11 @@
                             </div>
                         </form>
 
-                  </div>
+                  </div>    
+                    
                 </div>
+              </div>
+
               </div>
 
             </div>

@@ -40,7 +40,7 @@
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <h2>Pater Pan</h2>
+                <h2>Peter Pan</h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -251,34 +251,23 @@
                   </div>
                   <div class="x_content col-md-offset-4">
 
-                        <form method="post" action='/UploadData'>
-                            <font size="20">上傳食品藥材資料</font>
+                        <form method="post" action='/tokenStore'>
+                            <font size="20">存入Token</font>
                             <div class="form-group row">
-                                <label class="col-md-1 col-form-label">名稱:</label>
+                                <label class="col-md-1 col-form-label">POCKey:</label>
                                 <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Name" type="text" value="" size="20" required>
+                                    <input id="column" name="POCKey" class="form-control" type="text" value="" size="20" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-md-1 col-form-label">療效:</label>
+                                <label class="col-md-1 col-form-label">Token:</label>
                                 <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Efficacy" type="text" value="" size="20" required>
+                                    <input id="column" name="Token" class="form-control" type="text" value="" size="20" required>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label class="col-md-1 col-form-label">顏色:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Color" type="text" value="" size="20" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-1 col-form-label">所有者:</label>
-                                <div class="col-md-3">
-                                    <input id="column" class="form-control" name="Owner" type="text" value="" size="20" required>
-                                </div>
-                            </div>
+
                             <div class="col-md-offset-2">
-                            <button type="submit" class="btn btn-primary mb-2">submit</button>
+                                <button type="submit" class="btn btn-primary mb-2">submit</button>
                             </div>
                         </form>
 
