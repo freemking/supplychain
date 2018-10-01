@@ -40,7 +40,7 @@
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <h2>Peter Pan</h2>
+                <h2><%= username %></h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -53,6 +53,8 @@
                 <h3>Functions</h3>
                 <ul class="nav side-menu">
                   <li><a href="/POCtables"><i class="fa fa-home"></i>POC tables</a></li>
+                  <li><a href="/registerToken"><i class="fa fa-star" aria-hidden="true"></i>registerToken</a></li>
+                  <li><a href="/login"><i class="fa fa-star" aria-hidden="true"></i>login</a></li>
                   <li><a href="/InitLedger"><i class="fa fa-star" aria-hidden="true"></i>InitLedger</a></li>
                   <li><a><i class="fa fa-table"></i> Manage <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
@@ -70,12 +72,21 @@
                       <li><a href="/historyPOC0">historyPOC0</a></li>
                       <li><a href="/queryDataPage">queryDataPage</a></li>
                       <li><a href="/queryHarvestBatchPage">queryHarvestBatchPage</a></li>
+                      <li><a href="/queryProductNoOnlyPage">queryProductNoOnlyPage</a></li>
+                      <li><a href="/QRcodeB1">QRcodeB1</a></li>
+                      <li><a href="/QRcodeBatch">QRcodeBatch</a></li>
+                      <li><a href="/QRcode6925802110699">QRcode6925802110699</a></li>
+                      <li><a href="/QRcodeProductNo">QRcodeProductNo</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-edit"></i> Upload Data <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="/UploadDataHarvest">UploadDataHarvest</a></li>
                       <li><a href="/UploadDataFirstProcess">UploadDataFirstProcess</a></li>
+                      <li><a href="/UploadDataInspect">UploadDataInspect</a></li>
+                      <li><a href="/UploadDataPurchase">UploadDataPurchase</a></li>
+                      <li><a href="/UploadDataProduce">UploadDataProduce</a></li>
+                      <li><a href="/UploadDataSale">UploadDataSale</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-exchange"></i> Batch Upload <span class="fa fa-chevron-down"></span></a>
@@ -120,7 +131,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/user.png" alt="">Peter Pan
+                    <img src="images/user.png" alt=""><%= username %>
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
